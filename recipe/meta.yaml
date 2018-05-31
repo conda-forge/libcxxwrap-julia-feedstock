@@ -39,9 +39,7 @@ about:
   home: https://github.com/JuliaInterop/CxxWrap.jl
   license: MIT
   license_family: MIT
-  # LICENSE file missing from source.
-  # cf https://github.com/JuliaInterop/libcxxwrap-julia/issues/2
-  # license_file: LICENSE
+  license_file: LICENSE.md
   summary: 'Seamless operability between C++11 and Julia'
   description: 'Lightweight library that exposes C++ types in Julia and vice versa'
   doc_url: https://github.com/JuliaInterop/libcxxwrap-julia
