@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   # Julia has not been packaged for conda on OS X or Windows
-  skip: true  # [not unix]
+  skip: true  # [win]
 
 requirements:
   build:
