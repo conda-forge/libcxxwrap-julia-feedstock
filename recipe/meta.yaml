@@ -1,6 +1,6 @@
 {% set name = "libcxxwrap-julia" %}
-{% set version = "0.3.1" %}
-{% set sha256 = "5722c96c96d3d0e66411104b0a88b9409d7f4d699429d5d2c8284ae692ff1113" %}
+{% set version = "0.3.2" %}
+{% set sha256 = "7eeff7751bcdb1b3f4c9f26e7489cb3c68a71117c2e71014df169490eaf373b2" %}
 
 package:
   name: {{ name|lower }}
@@ -14,15 +14,15 @@ source:
 build:
   number: 0
   # Julia has not been packaged for conda on OS X or Windows
-  skip: true  # [not linux]
+  skip: true  # [win]
 
 requirements:
   build:
     - cmake
     - {{ compiler('cxx') }}
-    - julia >=0.6,<0.7
+    - julia >=1.0,<1.1
   run:
-    - julia >=0.6,<0.7
+    - julia >=1.0,<1.1
 
 test:
   commands:
