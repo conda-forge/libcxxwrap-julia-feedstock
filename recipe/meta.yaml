@@ -14,15 +14,15 @@ source:
 build:
   number: 0
   # Julia has not been packaged for conda on OS X or Windows
-  skip: true  # [not linux]
+  skip: true  # [not unix]
 
 requirements:
   build:
     - cmake
     - {{ compiler('cxx') }}
-    - julia >=0.6,<0.7
+    - julia >=1.0,<1.1
   run:
-    - julia >=0.6,<0.7
+    - julia >=1.0,<1.1
 
 test:
   commands:
