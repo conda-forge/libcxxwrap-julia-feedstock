@@ -12,9 +12,11 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   # Julia has not been packaged for conda on Windows
   skip: true  # [win]
+  run_exports:
+    - {{ pin_subpackage(name, max_pin='x.x') }}
 
 requirements:
   build:
