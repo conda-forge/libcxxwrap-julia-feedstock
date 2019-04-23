@@ -1,6 +1,6 @@
 {% set name = "libcxxwrap-julia" %}
-{% set version = "0.5.1" %}
-{% set sha256 = "47757e2d3b9a1fd5a9fcee78efa6a005509bc687461fc978b2feb9a429476a41" %}
+{% set version = "0.5.3" %}
+{% set sha256 = "0d99b63a2024e80757fa520c2fa618281cb81b16e0af0bda68d6926dec46f3e5" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   # Julia has not been packaged for conda on Windows
   skip: true  # [win]
   run_exports:
