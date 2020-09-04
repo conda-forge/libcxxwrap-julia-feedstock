@@ -1,6 +1,6 @@
 {% set name = "libcxxwrap-julia" %}
-{% set version = "0.6.6" %}
-{% set sha256 = "55d589348bfd803ab0b898141a1b09fc1692ef30eb5b4ede58eff3661ece4f1b" %}
+{% set version = "0.8.1" %}
+{% set sha256 = "1113f25bbe39aa4304c5ae1ae31fc0cac331b0f69754938087f17dfffa02a4cb" %}
 
 package:
   name: {{ name|lower }}
@@ -43,8 +43,8 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.md
-  summary: 'Seamless operability between C++11 and Julia'
-  description: 'Lightweight library that exposes C++ types in Julia and vice versa'
+  summary: Seamless operability between C++11 and Julia
+  description: Lightweight library that exposes C++ types in Julia and vice versa
   doc_url: https://github.com/JuliaInterop/libcxxwrap-julia
   dev_url: https://github.com/JuliaInterop/libcxxwrap-julia
 
