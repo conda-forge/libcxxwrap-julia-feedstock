@@ -1,6 +1,6 @@
 {% set name = "libcxxwrap-julia" %}
-{% set version = "0.6.6" %}
-{% set sha256 = "55d589348bfd803ab0b898141a1b09fc1692ef30eb5b4ede58eff3661ece4f1b" %}
+{% set version = "0.8.3" %}
+{% set sha256 = "b0421d11bdee5ce8af4922de6dfe3b0e5d69b07bb52894e3a22a477bbd27ee9e" %}
 
 package:
   name: {{ name|lower }}
@@ -23,9 +23,9 @@ requirements:
     - cmake
     - {{ compiler('cxx') }}
   host:
-    - julia >=1.0,<1.1
+    - julia >=1.6,<1.7
   run:
-    - julia >=1.0,<1.1
+    - julia >=1.6,<1.7
 
 test:
   commands:
