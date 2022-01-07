@@ -1,6 +1,6 @@
 {% set name = "libcxxwrap-julia" %}
-{% set version = "0.8.3" %}
-{% set sha256 = "b0421d11bdee5ce8af4922de6dfe3b0e5d69b07bb52894e3a22a477bbd27ee9e" %}
+{% set version = "0.9.0" %}
+{% set sha256 = "b30bf22e8e99519323f4f35f5acc86e3615f054ba1b69aff100e48047f4ed8d7" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   # Julia has not been packaged for conda on Windows
   skip: true  # [win]
   run_exports:
@@ -20,6 +20,7 @@ build:
 
 requirements:
   build:
+    - make
     - cmake
     - {{ compiler('cxx') }}
   host:
@@ -43,8 +44,8 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.md
-  summary: 'Seamless operability between C++11 and Julia'
-  description: 'Lightweight library that exposes C++ types in Julia and vice versa'
+  summary: Seamless operability between C++11 and Julia
+  description: Lightweight library that exposes C++ types in Julia and vice versa
   doc_url: https://github.com/JuliaInterop/libcxxwrap-julia
   dev_url: https://github.com/JuliaInterop/libcxxwrap-julia
 
