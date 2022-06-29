@@ -10,6 +10,8 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/JuliaInterop/libcxxwrap-julia/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - ice.patch
 
 build:
   number: 0
