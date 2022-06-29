@@ -1,6 +1,6 @@
 {% set name = "libcxxwrap-julia" %}
-{% set version = "0.9.0" %}
-{% set sha256 = "b30bf22e8e99519323f4f35f5acc86e3615f054ba1b69aff100e48047f4ed8d7" %}
+{% set version = "0.9.1" %}
+{% set sha256 = "d7938d88ae2dbcc6abf505df3ac280dcd7c85fca0954af56911cf510d6161e05" %}
 
 package:
   name: {{ name|lower }}
@@ -10,6 +10,8 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/JuliaInterop/libcxxwrap-julia/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - ice.patch
 
 build:
   number: 0
