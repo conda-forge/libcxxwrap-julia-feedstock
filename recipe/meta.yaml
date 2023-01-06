@@ -24,9 +24,9 @@ requirements:
     - cmake
     - {{ compiler('cxx') }}
   host:
-    - julia >=1.6,<1.7
+    - julia >=1.6,<1.9
   run:
-    - julia >=1.6,<1.7
+    - julia >=1.6,<1.9
 
 test:
   commands:
