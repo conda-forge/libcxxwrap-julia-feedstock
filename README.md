@@ -1,11 +1,11 @@
-About libcxxwrap-julia
-======================
+About libcxxwrap-julia-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libcxxwrap-julia-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/JuliaInterop/CxxWrap.jl
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libcxxwrap-julia-feedstock/blob/main/LICENSE.txt)
 
 Summary: Seamless operability between C++11 and Julia
 

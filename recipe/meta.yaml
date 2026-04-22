@@ -1,6 +1,6 @@
 {% set name = "libcxxwrap-julia" %}
-{% set version = "0.9.3" %}
-{% set sha256 = "e03edcf977bcbb93d625badb17771f643d4846d00e89d48f028b02c63207d295" %}
+{% set version = "0.9.7" %}
+{% set sha256 = "fdabaea71175f4440fb7516b7e1ebc1a1c0c515c65f03084246e77bc1c139ee5" %}
 
 package:
   name: {{ name|lower }}
